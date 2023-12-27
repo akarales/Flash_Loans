@@ -1,98 +1,79 @@
-# Flash Loans Application Development Plan
+# Flash Loans Application MVP Development Plan
 
 ## Project Overview
-The Flash Loans application is a Node.js project aimed at providing a platform for executing and monitoring flash loan transactions on the Ethereum blockchain. Utilizing the power of Web3.js and Ethereum smart contracts, this application will offer real-time transaction capabilities in the decentralized finance (DeFi) space.
+The Flash Loans MVP is a Node.js application designed for the Ethereum blockchain. It aims to explore and execute profitable arbitrage opportunities through flash loans, leveraging real-time cryptocurrency pricing and smart contract interactions.
 
-## Goals
-1. **Functionality**: Develop a robust application that can execute and monitor flash loans efficiently.
-2. **User Experience**: Create a user-friendly interface for interacting with the blockchain.
-3. **Security**: Ensure high levels of security in all transactions and smart contract interactions.
-4. **Scalability**: Design the application to be scalable for future enhancements.
+## MVP Features
+1. **Ethereum Mainnet Connection**: Establish a connection to the Ethereum Mainnet using a Node provider.
+2. **Secret Management**: Implement secure management of sensitive data like API keys and private keys.
+3. **Block Subscription**: Subscribe to new blocks on the Ethereum Blockchain to monitor transactions in real-time.
+4. **Cryptocurrency Pricing Polling**: Retrieve and normalize pricing data for two different cryptocurrencies.
+5. **Arbitrage Evaluation**: Evaluate potential arbitrage opportunities between two cryptocurrencies.
+6. **Flashloan Mechanism**: Implement the flashloan provider logic and smart contract.
+7. **Truffle Project Setup**: Set up a Truffle project for smart contract deployment and testing.
+8. **Smart Contract for Flashloan**: Develop a flashloan smart contract tailored for arbitrage.
+9. **Exchange and Token Addresses**: Configure addresses for exchanges and tokens involved in arbitrage.
+10. **Arbitrage Execution**: Develop logic for executing arbitrage (A to B and B to A scenarios).
+11. **Profit Withdrawal**: Implement functionality to withdraw profits from arbitrage transactions.
+12. **Transaction Initiation**: Send transactions to initiate flashloans as per arbitrage signals.
+13. **Deployment and Testing**: Deploy the smart contract and application, and test the MVP on a fork of the Ethereum Mainnet.
+14. **24/7 Operation on VPS**: Deploy the application on a Virtual Private Server for continuous operation.
+15. **Expandability**: Add functionality to include additional tokens in the arbitrage strategy.
+16. **Asset Liquidation**: Implement a feature to liquidate all assets when necessary.
 
-## Milestones
+## Development Phases
 
-### Phase 1: Research and Requirements Gathering
-- Understand the intricacies of flash loans.
-- Gather requirements for application features and functionalities.
+### Phase 1: Setup and Initial Development
+- Setup Node.js environment and connect to Ethereum Mainnet.
+- Implement secret management for secure handling of keys and credentials.
+- Duration: 1 week.
+
+### Phase 2: Real-Time Data Handling
+- Develop functionality to subscribe to new Ethereum blocks.
+- Implement polling and normalization of cryptocurrency pricing data.
 - Duration: 2 weeks.
 
-### Phase 2: Environment Setup and Initial Development
-- Set up the development environment.
-- Begin coding basic functionalities (connection to Ethereum, basic UI setup).
+### Phase 3: Arbitrage Logic and Flashloan Setup
+- Develop arbitrage evaluation algorithms.
+- Set up the flashloan provider and smart contract infrastructure using Truffle.
 - Duration: 3 weeks.
 
-### Phase 3: Smart Contract Development
-- Develop and test smart contracts for flash loans.
-- Integrate smart contracts with the Node.js backend.
+### Phase 4: Smart Contract Development
+- Develop and test the Flashloan smart contract.
+- Configure and integrate with exchange and token addresses.
+- Duration: 3 weeks.
+
+### Phase 5: Arbitrage Execution and Testing
+- Implement logic for arbitrage execution (A to B and B to A).
+- Set up withdrawal and transaction initiation functionalities.
+- Test the application on a fork of the Ethereum Mainnet.
 - Duration: 4 weeks.
 
-### Phase 4: Frontend Development and Integration
-- Develop the frontend interface.
-- Integrate the frontend with the backend services.
-- Duration: 3 weeks.
-
-### Phase 5: Testing and Debugging
-- Conduct thorough testing of the application (unit tests, integration tests, etc.).
-- Debug and fix issues.
+### Phase 6: Deployment and Operation
+- Deploy the application and smart contract.
+- Set up the application on a VPS for continuous operation.
 - Duration: 2 weeks.
 
-### Phase 6: Deployment and Monitoring
-- Deploy the application on a suitable platform.
-- Monitor the application for any issues and gather user feedback.
+### Phase 7: Expansion and Finalization
+- Add support for additional tokens.
+- Implement asset liquidation functionality.
 - Duration: 2 weeks.
 
-### Phase 7: Post-Launch Support and Updates
-- Provide support for any post-launch issues.
-- Plan for future updates based on user feedback.
-- Duration: Ongoing.
-
-## Technologies Used
-- Backend: Node.js, Web3.js.
-- Blockchain: Ethereum, Smart Contracts (Solidity).
-- Frontend: [Frontend Framework/Library].
-- Testing: [Testing tools and frameworks].
-- Deployment: [Deployment platform or service].
-
-## Team Roles and Responsibilities
-- Project Manager: Oversee the project, ensure milestones are met.
-- Blockchain Developer: Handle all blockchain-related development.
-- Backend Developer: Develop and manage the backend services.
-- Frontend Developer: Design and develop the user interface.
-- QA Engineer: Responsible for testing and quality assurance.
+## Technologies and Tools
+- Node.js for backend development.
+- Ethereum Smart Contracts written in Solidity.
+- Truffle Suite for smart contract deployment and testing.
+- Web3.js for blockchain interactions.
+- Virtual Private Server (VPS) for deployment.
 
 ## Risk Management
-- Identify potential risks in smart contract security.
-- Plan for scalability and high user load.
-- Address any legal and compliance issues related to DeFi and blockchain.
+- Thorough testing on a fork of the Ethereum Mainnet to ensure reliability.
+- Continuous monitoring for potential security vulnerabilities.
+- Regular updates and maintenance post-deployment.
 
 ## Budget and Resources
-- Estimate the budget required for tools, technologies, and human resources.
-- Plan for potential additional costs during development.
+- Budget allocation for development tools, testing, and VPS hosting.
+- Resource planning for developers, blockchain experts, and testers.
 
 ## Conclusion
-This plan serves as a roadmap for the development of the Flash Loans application. By adhering to this plan, we aim to deliver a high-quality and efficient product that meets the needs of our users in the DeFi space.
-
-## Initial Application MVP
-
-1.  Connect to ethereum Mainnet with Node Provider.
-2.  Configure secret management file.
-3.  Subscribe to new Blocks on the Ethereum Blockchain.
-4.  Poll 1st Cryptocurrency for pricing.
-5.  Normalize pricing data.
-6.  Poll 2nd Cryptocurrency Pricing.
-7.  Evaluate Arbitrage.
-8.  Flashloan Provider.
-9.  Truffle Project.
-10. Sending Address.
-11. Flashloan Smart Contract.
-12. Exchange Addresses.
-13. Token Addresses.
-14. Arbitrage A to B: Buy on Exchange A, Sell on Exchange B.
-15. Arbitrage B to A: Buy on Exchange B, Sell on Exchange A.
-16. Withdraw Profit.
-17. Send transaction and initiate the Flashoan.
-18. Deploy Flashloan Smart Contract.
-19. Deploy Application to VPS and run 24/7.
-20. Test the Flashloan application on a Fork of the Ethereum Mainnet.
-21. Add aditional Tokens to the application.
-22. Liquidate all assets.
+This development plan outlines the steps to create an MVP for the Flash Loans application. The focus is on creating a functional, secure, and scalable application that efficiently executes and monitors arbitrage opportunities in the DeFi space.
