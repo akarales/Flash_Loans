@@ -58,7 +58,8 @@ function handleConnected(subscriptionId) {
 
 // Event listener that logs the received block header data
 function handleNewBlock(blockHeader) {
-    console.log(blockHeader);
+    // console.log(blockHeader);
+    console.log(`Block number: ${blockHeader.number}`);
 }
 
 // Event listener that logs any errors that occur
